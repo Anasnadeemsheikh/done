@@ -49,4 +49,4 @@ app.post('/', async (req, res) => {
     res.send('Email Sent!')
 })
 
-app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`))
+app.listen(process.env.PORT || port, () => console.log(`Example app listening at http://localhost:${port}`))
