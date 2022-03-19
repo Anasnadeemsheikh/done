@@ -21,12 +21,12 @@ app.post('/', async (req, res) => {
     const {email} = req.body;
     // create reusable transporter object using the default SMTP transport
     let transporter = nodemailer.createTransport({
-        host: "smtp.ethereal.email",
+        host: "vmin.safetyprojecttestserver.com.ng",
         port: 587,
         secure: false, // true for 465, false for other ports
         auth: {
-            user: 'oma.beer0@ethereal.email', // ethereal user
-            pass: 'e31192kEn2gJAGK9rv', // ethereal password
+            user: 'mail@safetyprojecttestserver.com.ng', // ethereal user
+            pass: 'safetyProject@1Test', // ethereal password
         },
     });
     
